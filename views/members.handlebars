@@ -85,22 +85,21 @@
             <h5 class="modal-title" id="exampleModalLabel">Add Items</h5>
             <form action="/members/addgroceries" method="post">
 
-              <label for="owned">Add To:</label>
-              <select name="owned" id="owned">
+              <label for="owned" class="hide2">Add To:</label>
+              <select name="owned" id="owned" class="hide2">
                 <option value="true">Pantry</option>
                 <option value="false">Shopping List</option>
               </select>
               <br><label for= "name" >Name</label>
-              <input type="text" name="name" id="name">
-              <br> <label for="quantity"> Quantity:</label>
-              <input type="number" name="quantity" id="quantity">
-              <br> <label for = "unit">Unit Type (Cup, oz, etc):</label>
-              <input type="text" name="unit" id="unit">
+              <input type="text" name="name" id="name" >
+              <br> <label for="quantity" > Quantity:</label>
+              <input type="number" name="quantity" id="quantity" >
+              <br> <label for = "unit" >Unit Type (Cup, oz, etc):</label>
+              <input type="text" name="unit" id="unit" >
               <br> <label for="expiration" class="hide"> Expiration Date:</label>
               <input id="date" type="date" name="date" id="expiration" class="hide">
               <br> <label for= "notification" class="hide" >Expiration Notification Date: </label>
               <input type="date" name="notification" id="notification" class="hide">
-
               <input type="submit">
               <br>
             </form>
@@ -110,6 +109,30 @@
     </div>
   </div>
 
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <form>
+            <strong>Add Expiration Date</strong>
+              <br> <label for = "itemId" class ="hide2">Unit Type (Cup, oz, etc):</label>
+              <input type="text" name="itemId" id="itemId" class="hide2">
+              <br> <label for="updateExpiration"> Expiration Date:</label>
+              <input id="updateExpiration" type="date" name="date">
+              <br> <label for= "updateNotification" class="hide" >Expiration Notification Date: </label>
+              <input type="date" name="notification" id="updateNotification" class="hide"><br>
+              <input type="submit" id="updateButton">
+              <br>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
 
   <div class="container">
     <div class="row">
